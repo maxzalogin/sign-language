@@ -257,7 +257,7 @@ main {
 }
 
 /* Width <=400px */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
 
   .alphabet-item {
     display: flex;
