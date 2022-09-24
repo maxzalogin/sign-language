@@ -186,23 +186,7 @@ main {
   color: #787878;
 }
 
-/* Dark mode OS */
-@media (prefers-color-scheme: dark) {
-  body, footer {
-    background-color: #373737;
-    color:#f4f4f4;
-  }
-
-  .alphabet-item {
-    background-color: #f4f4f4;
-  }
-
-  header {
-    filter: invert(100%);
-  }
-}
-
-/* Adaptation for phones */
+/* Width <=900px */
 @media (max-width: 900px) {
 
   html {
@@ -213,6 +197,10 @@ main {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10%;
+  }
+
+  .nav-link:hover {
+    border-bottom: burlywood solid 2px;
   }
 
   .alphabet-item {
@@ -250,27 +238,28 @@ main {
   .card-item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 10px;
-} 
+  }
+
   .footer-box {
     height: 10%;
   }
 }
 
-/* Width <=400px */
+/* Width <=420px */
 @media (max-width: 420px) {
+  .nav-link:hover {
+    border-bottom: burlywood solid 2px;
+  }
 
   .alphabet-item {
     display: flex;
     flex: 1 1 25%
   }
 
-  .alphabet-item:nth-child(3n)
-  {
+  .alphabet-item:nth-child(3n) {
     margin-right: 0;
   }
-  }
-
-
+}
 
 /* Dark mode*/
 body.dark-theme {
@@ -285,4 +274,3 @@ body.dark-theme a.nav-link {
 body.dark-theme .mode-icon {
   filter: invert(100%);
 }
-
