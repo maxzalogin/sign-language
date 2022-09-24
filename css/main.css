@@ -151,9 +151,10 @@ main {
 /* Section More */
 .card-list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   flex: 0 0 33.33%;
   height: 220px;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -168,8 +169,7 @@ main {
   border-radius: 10px;
 }
 
-.card-item:not(:nth-child(2n)) {
-  margin-bottom: 10px;
+.card-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -254,8 +254,12 @@ main {
   } */
 
   .card-item:not(:last-child) {
+    margin-right: 0;
     margin-bottom: 10px;
 } 
+  .footer-box {
+    height: 10%;
+  }
 }
 
 /* Стили Тёмной темы */
