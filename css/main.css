@@ -112,7 +112,7 @@ main {
 
 .container-alphabet {
   margin-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   border-bottom: burlywood solid 3px;
 }
 
@@ -247,12 +247,6 @@ main {
     height: 30%;
   }
 
-  /* .card-item:last-child(1),
-  .card-item:last-child(2) {
-
-    margin-bottom: 10px;
-  } */
-
   .card-item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 10px;
@@ -262,7 +256,23 @@ main {
   }
 }
 
-/* Стили Тёмной темы */
+/* Width <=400px */
+@media (max-width: 400px) {
+
+  .alphabet-item {
+    display: flex;
+    flex: 1 1 25%
+  }
+
+  .alphabet-item:nth-child(3n)
+  {
+    margin-right: 0;
+  }
+  }
+
+
+
+/* Dark mode*/
 body.dark-theme {
   color: #f4f4f4;
   background-color: #373737;
