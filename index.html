@@ -24,8 +24,11 @@
           <li class="nav-item">
             <a class="nav-link" href="//github.com/maxzalogin/maxzalogin.github.io" target="_blank"> Гит </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> О проекте </a>
+          </li>
           <a href="#"> <img class="mode-icon" src="img/mode.svg"> </a>
-        </ul>
+        </ul> 
       </nav>
     </div>
   </header>
@@ -168,6 +171,20 @@
   </footer>
 
   <script src="js/mode.js"> </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
 
 </body>
 
